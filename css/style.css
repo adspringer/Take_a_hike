@@ -1,3 +1,11 @@
+.labelLeft{
+  float: left;
+}
+
+.marFS{
+    margin: 5px 5px 5px 5px;
+}
+
 .footerTitle2{
   color: white;
   font-size: 11px;
