@@ -2,39 +2,62 @@
   float: left;
 }
 
+#blah {
+}
+
+H4, H2 {
+  margin-bottom: 15px;
+}
+
 .udPad{
-  padding-top: 5px;
+  padding-top: 15px;
   padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .cbPad{
   padding-left: 2px;
   padding-bottom: 2px;
 }
+
 .marFS{
     margin: 5px 25px 5px 25px;
 }
 
-.footerTitle2{
+.footerTitle2 {
   color: white;
   font-size: 11px;
 }
 
-.footerTitle{
+.footerTitle {
+  margin-top: 5px;
   color: white;
   font-size: 12px;
 }
 
-.footerLink{
+.footerLink {
   color: #989896 !important;
   font-size: 11px !important;
 }
 
-#myFooter{
+footer ul {
+  padding:0px;
+  margin-right:0px;
+  margin-left:0px;
+}
+
+.marginIn {
+  margin-left:0;
+  margin-right:0;
+}
+
+#myFooter {
   margin-top: 5px;
-  padding-top: 2px;
+  padding-top:2px;
   background-color: #333;
   width: 100%;
+  text-align: center;
 }
 
 #secondFooter {
@@ -55,7 +78,7 @@
 }
 #map-canvas{
     position: absolute;
-    top: 5px;
+    top: 15px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -454,7 +477,9 @@ body {
 
 }
 /*CAROUSEL*/
-body {  }
+body {
+  background-color: RGBA(126, 167, 165, 1);
+  }
 
 #myCarousel .carousel-caption {
     left:0;

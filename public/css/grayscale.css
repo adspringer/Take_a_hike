@@ -141,9 +141,9 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding-top: 150px;
-	padding-bottom: 250px;
+    height: 100%;
+    padding-top: 25%;
+	padding-bottom: 40%;
     text-align: center;
     color: #fff;
     background: url('/img/LOGO/forest-03-02.png') no-repeat bottom center scroll;
