@@ -11,7 +11,7 @@ Make sure you have
 
 
 ```sh
-git clone https://github.com/aspringer/Take_a_hike.git
+git clone https://github.com/jimnguyen123/Take_a_hike.git
 cd Take_a_hike
 npm install
 bower install
