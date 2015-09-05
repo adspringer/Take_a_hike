@@ -141,11 +141,12 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
-    padding: 250px ;
+    height: 100%;
+    padding-top: 25%;
+	padding-bottom: 40%;
     text-align: center;
     color: #fff;
-    background: url(/img/LOGO/forest-03-02.png) no-repeat bottom center scroll;
+    background: url('/img/LOGO/forest-03-02.png') no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;

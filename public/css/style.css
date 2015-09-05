@@ -1,24 +1,82 @@
-.footerTitle2{
+html {
+}
+
+body{
+}
+
+.panelStyle {
+  padding: 15px;
+  background-color: RGBA(104, 184, 196, 1);
+  color: white;
+  font-size: 12px;
+}
+.skipNav{
+padding-top: 75px;
+}
+
+.labelLeft{
+  float: left;
+}
+
+
+H4, H2 {
+  margin-bottom: 15px;
+}
+
+.udPad{
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.cbPad{
+  padding-left: 2px;
+}
+
+.marFS{
+    margin: 5px 25px 5px 25px;
+}
+
+.footerTitle2 {
   color: white;
   font-size: 11px;
 }
 
-.footerTitle{
+.footerTitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
   color: white;
   font-size: 12px;
 }
 
-.footerLink{
+.footerLink {
   color: #989896 !important;
   font-size: 11px !important;
 }
 
-#myFooter{
-  text-align:center;
+footer ul {
+  padding:0px;
+  margin-right:0px;
+  margin-left:0px;
+}
+
+.marginIn {
+  margin-left:0;
+  margin-right:0;
+}
+
+#myFooter {
+  margin-top: 5px;
+  padding-top:2px;
   background-color: #333;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 10px;
+  text-align: center;
+}
+
+#secondFooter {
+  padding-top: 5px;
+  background-color: #3e3e3e;
+  text-align: center;
 }
 
 #navFix{
@@ -26,40 +84,25 @@
 	padding-top: 15px;
 }
 
-/*#map-canvas { 
-width: 100%; 
-height:600px; 
-margin: 0;
-padding: 0;
-
-}*/
-
-#map-canvas {
-	width:100%;
-    position:absolute;
-    top:0px;
-    bottom:0;
+.mapContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 150%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+	margin-bottom: 10px;
+}
+.pzero {
+  padding: 0px;
 }
 
-#sideBar{
-	height: 100%;
-}
-
-#sideBar.affix-top{
-	position: static;
-	top: 10px;
-	width: 100%;
-	height: 100%;
-}
-
-.affix,.affix-top {
-   position:static;
-}
-
-#sideBar.affix{
-	position: fixed;
-	top: 50px;
-	width: 100%;
+#map-canvas{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .coolContent{
@@ -116,7 +159,7 @@ background-repeat: no-repeat;
 /*background-size: 100% 100%;*/
 background-size: cover;
 width:100%;
-height: 100%
+height: 100%;
 padding-top: 7%;
 padding-bottom: 5%;
 /*margin: 40px;*/
@@ -264,12 +307,6 @@ body {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
-	#masthead h1 {
-		font-size: 5em;
-	}
-}
-
 .navbar-bright {
 	/*background-color:#D7D7D7;*/
 	background-color: #353E46;
@@ -288,7 +325,26 @@ body {
 	position: static;
 }
 
-@media (min-width: 979px) {
+@media screen and (min-width: 768px) {
+	#masthead h1 {
+		font-size: 5em;
+	}
+}
+  
+@media (min-width: 375px) {  
+  .mapContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 130%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+	margin-bottom: 10px;
+  }
+  .pzero {
+	padding: inherit;
+  }
+}
+
+@media screen and (min-width: 979px) {
   #sidebar.affix-top {
     position: static;
   	margin-top:0px;
@@ -453,7 +509,9 @@ body {
 
 }
 /*CAROUSEL*/
-body {  }
+body {
+  background-color: RGBA(126, 167, 165, 1);
+  }
 
 #myCarousel .carousel-caption {
     left:0;
@@ -612,7 +670,8 @@ body {  }
      /* overflow: hidden;*/ /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
-      /*margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */*/
+      /*margin-top: -120px; */
+      /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 			padding: 10px;
     }
 
@@ -642,7 +701,7 @@ body {  }
     @media (max-width: 979px) {
 
       .container.navbar-wrapper {
-        margin-bottom: 20;
+        margin-bottom: 20px;
         width: auto;
       }
       .navbar-inner {

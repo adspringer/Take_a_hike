@@ -122,22 +122,22 @@ fieldset{
  * Container/Target Styles
  */
 
-.container{
-  padding: -1%;
- /* padding: 2%;
+.container, .container-fluid {
+ /* padding: -1%;
+  padding: 2%;
   min-height: 400px;*/
   /*text-align: justify;*/
   position: relative;
 }
 
-.container .mix,
+.container .mix, .container-fluid .mix, .conatiner-fluid .gap,
 .container .gap{
   /*width: 100px;*/
   display: inline-block;
   /*margin: 1em;*/
 }
 
-.container .mix{
+.container .mix, .container-fluid .mix{
   max-width: 30%;
   max-height: 250px;
 	border: solid 4px;
@@ -150,19 +150,19 @@ fieldset{
 box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2) ;
 }
 
-.container .mix.green{
+.container .mix.green, .container-fluid .mix.green{
   background: #a6e6a7;
 }
 
-.container .mix.blue{
+.container .mix.blue, .container-fluid .mix.blue{
   background: #6bd2e8;
 }
 
-.container .mix.circle{
+.container .mix.circle, .container-fluid .mix.circle{
   border-radius: 999px;
 }
 
-.container .mix.triangle{
+.container .mix.triangle, .container-fluid .mix.triangle{
   width: 0;
   height: 0;
   border: 50px solid transparent;
@@ -175,6 +175,12 @@ box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2) ;
   height: 50px;
 }
 
+.container-fluid .mix.diff,
+.container-fluid .mix.mod,
+.container-fluid .mix.ez,
+.container-fluid .mix.lo,
+.container-fluid .mix.med,
+.container-fluid .mix.hi,
 .container .mix.diff,
 .container .mix.mod,
 .container .mix.ez,
@@ -189,7 +195,7 @@ box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2) ;
  * Fail message styles
  */
 
-.container .fail-message{
+.container .fail-message, .container-fluid .fail-message {
   position: absolute;
   top: 0;
   left: 0;
@@ -204,21 +210,21 @@ box-shadow: 2px 2px 6px 0 rgba(0,0,0,0.2) ;
   transition: 150ms;
 }
 
-.container .fail-message:before{
+.container .fail-message:before, .container-fluid .fail-message:before {
   content: '';
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
 
-.container .fail-message span{
+.container .fail-message span, .container-fluid .fail-message  span{
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
   font-weight: 700;
 }
 
-.container.fail .fail-message{
+.container.fail .fail-message, .container-fluid.fail .fail-message {
   opacity: 1;
   pointer-events: auto;
 }

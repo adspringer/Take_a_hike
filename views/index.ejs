@@ -1,164 +1,5 @@
 <% include header2 %>
-<!--script src="/js/mixitup2.js"></script>
-<link rel="stylesheet" href="/css/mixitup2.css"-->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" id="navFix" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Take A</span> Hike
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a href="#blah">GET	HIKING</a>
-                    </li>
-                    <li>
-                        <a href="/tips">GET INFORMED</a>
-                    </li>
-                    <li>
-                        <a href="/social">GET INVOLVED</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-		
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="brand-heading">Take A Hike</h1>
-                        <p class="intro-text">Step outside and get some fresh air. Right in your neck of the woods.</p>
-                        <a href="#blah" class="btn btn-circle page-scroll">
-<!--													<i class="glyphicon glyphicon-search">
--->                            <i class="fa fa-angle-double-down "></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-	</br>
-	</br>
-	</br>
-	</br>
-
-    <!-- About Section -->
-    <section id="blah" class="container-fluid content-section text-center">
-        <div class="row" id="rowFix">
-            <div class="col-sm-8">
-            			<h3>Use the filters to find exactly what you are looking for.</h3>
-							<h2>Find A Hike</h2>
-							<form class="controls" id="Filters">
-  <!-- We can add an unlimited number of "filter groups" using the following format: -->
-  <div class="row">
-	<fieldset>
-		<!--REPLACE SHAPES WITH DIFFICULTY-->
-    <h4>DIFFICULTY</h4>
-    <div class="checkbox">
-      <input type="checkbox" value=".ez"/>
-      <!--label>Square</label-->
-			<label><img src="img/filter/1-08.png"> Easy</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".mod"/>
-      <!--label>Circle</label-->
-	    <label><img src="img/filter/1-09.png"> Moderate</label>
-
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".diff"/>
-      <!--label>Triangle</label-->
-	    <label><img src="img/filter/1-10.png"> Hard</label>
-    </div>
-  </fieldset>
-  
-  <fieldset>
-	<!--REPLACE COLOURS WITH DISTANCE-->
-    <h4>Distance</h4>
-    <div class="checkbox">
-      <input type="checkbox" value=".short"/>
-      <label><img src="img/filter/0-08.png"> Short < 1 mile</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".med"/>
-      <label><img src="img/filter/0-09.png"> Medium 1 - 3 miles</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".long"/>
-      <label><img src="img/filter/0-10.png"> Long 3.5+ miles</label>
-    </div>
-  </fieldset>
-  
-  <fieldset>
-	<!--REPLACE SIZES WITH DURATION-->
-    <h4>Duration</h4>
-    <div class="checkbox">
-      <input type="checkbox" value=".lo"/>
-      <label><img src="img/filter/0-07.png"> Short < 1 hour</label>
-    </div>
-		<div class="checkbox">
-      <input type="checkbox" value=".mid"/>
-      <label><img src="img/filter/0-06.png"> Medium 1-2 hours</label>
-    </div>
-    <div class="checkbox">
-      <input type="checkbox" value=".hi"/>
-      <label><img src="img/filter/0-05.png"> Long 2.5+ hours</label>
-    </div>
-  </fieldset>
-  
-  <button id="Reset">Clear Filters</button>
-</form>
-</div>
-
-<div id="Container" class="container">
-  <div class="fail-message"><span>No items were found matching the selected filters</span></div>
-  
-  <div class="mix diff long mid"><a href="/hike1"><img class="img-responsive square" src="/img/TrailFilter/MtWoodson1.jpg"></a></div>
-  <div class="mix mod med lo"><a href="/hike2"><img class="img-responsive" src="/img/TrailFilter/Cowles5.jpg"></a></div>
-	<div class="mix ez med mid"><a href="/hike3"><img class="img-responsive" src="/img/TrailFilter/Bayside1.jpg"></a></div>
-  <div class="mix mod short lo"><a href="/hike4"><img class="img-responsive" src="/img/TrailFilter/LaJolla2.jpg"></a></div>
-  <div class="mix ez short lo"><a href="/hike5"><img class="img-responsive" src="/img/TrailFilter/guy5.jpg"></a></div>
-  <div class="mix ez long mid"><a href="/hike6"><img class="img-responsive" src="/img/TrailFilter/SanElijo1.jpg"></a></div>
-  <div class="mix ez med lo"><a href="/hike7"><img class="img-responsive" src="/img/TrailFilter/Batiquitos1.jpg"></a></div>
-  <div class="mix ez short lo"><a href="/hike8"><img class="img-responsive" src="/img/TrailFilter/Inaja2.jpg"></a></div>
-  <div class="mix mod long hi"><a href="/hike9"><img class="img-responsive" src="/img/TrailFilter/Palomar5.jpeg.jpg"></a></div>
-  <div class="mix ez long hi"><a href="/hike10"><img class="img-responsive" src="/img/TrailFilter/LosPenasquitos1.jpg"></a></div>
-  <div class="mix mod long hi"><a href="/hike11"><img class="img-responsive" src="/img/TrailFilter/NorthShores1.jpg"></a></div> 
-  <div class="mix ez med lo"><a href="/hike12"><img class="img-responsive" src="/img/TrailFilter/DiscoveryLake6.jpg"></a></div>
-  <div class="mix ez med lo"><a href="/hike13"><img class="img-responsive" src="/img/TrailFilter/LosJilgueros4.jpg"></a></div>
-  <div class="mix ez long mid"><a href="/hike14"><img class="img-responsive" src="/img/TrailFilter/WildernessGarden1.jpg"></a></div>
-  <div class="mix diff long hi"><a href="/hike15"><img class="img-responsive" src="/img/TrailFilter/SanMiguel3.jpg"></a></div>
-  <div class="mix diff long hi"><a href="/hike16"><img class="img-responsive" src="/img/TrailFilter/Fortuna4.jpg"></a></div>
-  <div class="mix diff long hi"><a href="/hike17"><img class="img-responsive" src="/img/TrailFilter/Lawson2.jpg"></a></div>
-  <div class="mix diff long hi"><a href="/hike18"><img class="img-responsive" src="/img/TrailFilter/CedarCreek1.jpg"></a></div>
-  <div class="mix diff long mid"><a href="/hike19"><img class="img-responsive" src="/img/TrailFilter/threesisters5.jpg"></a></div>
-  <div class="mix mod long hi"><a href="/hike20"><img class="img-responsive" src="/img/TrailFilter/ironmountain5.jpg"></a></div>
-
-  <div class="gap"></div>
-  <div class="gap"></div>
-  <div class="gap"></div>
-  <div class="gap"></div>
-	
-</div>
 <script>
 	// On document ready:
 
@@ -167,78 +8,172 @@ $(function(){
 	// Instantiate MixItUp:
 
 	$('#Container').mixItUp();
+});
+</script>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+ <% include nav %>
+
+    <!-- Intro Header -->
+		
+    <header class="intro">
+      <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                       <h1 class="brand-heading">Take A Hike</h1>
+                        <p class="intro-text">Step outside and get some fresh air. Right in your neck of the woods.</p>
+                        <a href="#blah" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- About Section -->
+
+    <section id="blah" class="container-fluid content-section text-center">
+	<div class="col-xs-12">
+		</br>
+		  <h2>Use filters to find a hike</h2>
+	<div class="row">
+
+	<form class="controls" id="Filters">
+  <!-- We can add an unlimited number of "filter groups" using the following format: -->
+ 		
+	<fieldset class="marFS">
+		<!--REPLACE SHAPES WITH DIFFICULTY-->
+    <h4>DIFFICULTY</h4>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".ez"/>
+      <!--label>Square</label-->
+			<label class="labelLeft"><img src="img/filter/1-08.png"> Easy</label>
+    </div>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".mod"/>
+      <!--label>Circle</label-->
+	    <label class="labelLeft"><img src="img/filter/1-09.png"> Moderate</label>
+
+    </div>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".diff"/>
+      <!--label>Triangle</label-->
+	    <label class="labelLeft"><img src="img/filter/1-10.png"> Hard</label>
+    </div>
+  </fieldset>
+  
+	<fieldset class="marFS">
+	<!--REPLACE COLOURS WITH DISTANCE-->
+    <h4>DISTANCE</h4>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".short"/>
+      <label class="labelLeft"><img src="img/filter/0-08.png"> Short < 1 mile</label>
+    </div>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".med"/>
+      <label class="labelLeft"><img src="img/filter/0-09.png"> Medium 1 - 3 miles</label>
+    </div>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".long"/>
+      <label class="labelLeft"><img src="img/filter/0-10.png"> Long 3.5+ miles</label>
+    </div>
+  </fieldset>
+  
+  	<fieldset class="marFS">
+	<!--REPLACE SIZES WITH DURATION-->
+    <h4>DURATION</h4>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".lo"/>
+      <label class="labelLeft"><img src="img/filter/0-07.png"> Short < 1 hour</label>
+    </div>
+		<div class="checkbox cbPad">
+      <input type="checkbox" value=".mid"/>
+      <label class="labelLeft"><img src="img/filter/0-06.png"> Medium 1-2 hours</label>
+    </div>
+    <div class="checkbox cbPad">
+      <input type="checkbox" value=".hi"/>
+      <label class="labelLeft"><img src="img/filter/0-05.png"> Long 2.5+ hours</label>
+    </div>
+	</fieldset>
+
+  <button id="Reset" class="marFS">Clear Filters</button>
+  	</form>
+
+ </div>
+ 
+</div>
+
+<div class="row">
+<div class="col-md-8 col-xs-12">
+<div id="Container" class="container-fluid udPad">
+  <div class="fail-message"><span>No items were found matching the selected filters</span></div>
+  <div class="mix diff long mid"><a href="/hike1"><img class="img-responsive" src="img/TrailFilter/MtWoodson1.jpg"></a></div>
+  <div class="mix mod med lo"><a href="/hike2"><img class="img-responsive" src="img/TrailFilter/Cowles5.jpg"></a></div>
+  <div class="mix ez med mid"><a href="/hike3"><img class="img-responsive" src="img/TrailFilter/Bayside1.jpg"></a></div>
+  <div class="mix mod short lo"><a href="/hike4"><img class="img-responsive" src="img/TrailFilter/LaJolla2.jpg"></a></div>
+  
+  <div class="mix ez short lo"><a href="/hike5"><img class="img-responsive" src="img/TrailFilter/guy5.jpg"></a></div>
+  <div class="mix ez long mid"><a href="/hike6"><img class="img-responsive" src="img/TrailFilter/SanElijo1.jpg"></a></div>
+  <div class="mix ez med lo"><a href="/hike7"><img class="img-responsive" src="img/TrailFilter/Batiquitos1.jpg"></a></div>
+  <div class="mix ez short lo"><a href="/hike8"><img class="img-responsive" src="img/TrailFilter/Inaja2.jpg"></a></div>
+  
+  <div class="mix mod long hi"><a href="/hike9"><img class="img-responsive" src="img/TrailFilter/Palomar5.jpeg.jpg"></a></div>
+  <div class="mix ez long hi"><a href="/hike10"><img class="img-responsive" src="img/TrailFilter/LosPenasquitos1.jpg"></a></div>
+  <div class="mix mod long hi"><a href="/hike11"><img class="img-responsive" src="img/TrailFilter/NorthShores1.jpg"></a></div> 
+  <div class="mix ez med lo"><a href="/hike12"><img class="img-responsive" src="img/TrailFilter/DiscoveryLake6.jpg"></a></div>
+  
+   
+  <div class="mix ez med lo"><a href="/hike13"><img class="img-responsive" src="img/TrailFilter/LosJilgueros4.jpg"></a></div>
+  <div class="mix ez long mid"><a href="/hike14"><img class="img-responsive" src="img/TrailFilter/WildernessGarden1.jpg"></a></div>
+  <div class="mix diff long hi"><a href="/hike15"><img class="img-responsive" src="img/TrailFilter/SanMiguel3.jpg"></a></div>
+  <div class="mix diff long hi"><a href="/hike16"><img class="img-responsive" src="img/TrailFilter/Fortuna4.jpg"></a></div>
+
+  <div class="mix diff long hi"><a href="/hike17"><img class="img-responsive" src="img/TrailFilter/Lawson2.jpg"></a></div>
+  <div class="mix diff long hi"><a href="/hike18"><img class="img-responsive" src="img/TrailFilter/CedarCreek1.jpg"></a></div>
+  <div class="mix diff long mid"><a href="/hike19"><img class="img-responsive" src="img/TrailFilter/threesisters5.jpg"></a></div>
+  <div class="mix mod long hi"><a href="/hike20"><img class="img-responsive" src="img/TrailFilter/ironmountain5.jpg"></a></div>
+	  
+</div>  <!-- end of Container container -->
+</div>
+ 
+<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 pzero">
+  <div class="mapContainer">
+    <div id="map-canvas"></div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<% include footer2 %>
+</body>
+
+<script type="text/javascript">
+var form = document.getElementsByClassName('controls');
+form[0].addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    alert('event');
+
+});
+form[0].childNodes[3].addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    alert('event');
 
 });
 </script>
-								<div class="nav-footer nav-bottom">
-                <footer id="myFooter">
-    <div class="container">
-      <div class="row-fluid">
-        <div class="col-xs-12">
-          <div class="col-md-3" >
-            <ul style="list-style-type: none;" >
-              <li class="footerTitle">Pages<li>
-          
-              <li><a class="footerLink" href="/">Home</a></li>
-              <li><a class="footerLink" href="/#blah"> Get Hiking</a></li>
-              <li><a class="footerLink" href="/tips"> Get Informed</a></li>
-              <li><a class="footerLink" href="/social"> Get Involved</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3" >
-            <ul style="list-style-type: none;">
-              <li class="footerTitle">Check Out These Sites<li>
-            
-              <li><a class="footerLink" href="http://sandiego.sierraclub.org/home/index.asp">Sierra Club </a></li>
-              <li><a class="footerLink" href="http://alltrails.com/search?q=san+diego&ref=search">All Trials</a></li>
-              <li><a class="footerLink" href="http://www.sandiegocounty.gov/parks/hikes.html"> Parks and Recreation</a></li>          
-            </ul>
-          </div>
-          <div class="col-md-3" >
-            <ul style="list-style-type: none;">
-              <li class="footerTitle">The Iterative Design Process<li>
-              <li><a class="footerLink" href="http://labummer.com/Take_a_hike/wireframe/wf1">wireframe #1</a></li>
-              <li><a class="footerLink" href="http://labummer.com/Take_a_hike/wireframe/wf2">wireframe #2</a></li>
-              <li><a class="footerLink" href="http://labummer.com/Take_a_hike/wireframe/wfFinal">wireframe #2</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3" >
-            <ul style="list-style-type: none;">
-              <li class="footerTitle">Designed by<li>
-              <li><a class="footerLink" href="#">JIMMY NGUYEN</a></li>
-              <li><a class="footerLink" href="#">NATASHA SPRINGER</a></li>
-              <li><a class="footerLink" href="#">CHELSEA PATTEE</a></li>
-            </ul>
-          </div>  
-        </div>          
-      </div>
-    </div>
-  </footer>
-  <footer id="secondFooter" style="background-color:#3e3e3e">
-    <div class="container">
-      <div class="row-fluid">
-        <div class="col=md-12" style="padding-top:10px">
-        <div class="col-md-5">
-          <a class="footerLink" href="#">Terms of Service</a>    
-          <a class="footerLink" href="#">Privacy</a>    
-          <a class="footerLink" href="#">Security</a>
-        </div>
-        <div class="col-md-7">
-          <p class="muted pull-right footerTitle2">&#169;2014 COGS187A FALL.  All rights reserved</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-            </div>
-            
-            <div class="col-sm-4" id="rowFix">
-            	<div id="sideBar">
-            		<div id="map-canvas"></div>
-            	</div>
-            </div>
-        </div>
-    </section>
-<% include footer2 %>
+
+<% include script %>
+<% include mapScript %>
+</html>
 
   
