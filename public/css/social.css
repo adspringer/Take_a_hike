@@ -5,10 +5,8 @@
     overflow:hidden;
     width: 400px;
     height:300px;
-    
 }
- 
-.caption {
+ .caption {
     position:absolute;
     top:-100%;
     right:0;
@@ -36,24 +34,22 @@ IMG {
     margin-right: auto }
  
     
-    
-    
-    
-    a:link {
+  /*  */
+  .caption p {
+    font-size: 14px;
+  }
+.caption a:link {
     color: #FFF;
 }
 
-/* visited link */
-a:visited {
+.caption a:visited {
     color: #FFF;
 }
     
-    
-    
-    a:link {
+.caption a:link {
     text-decoration: none;
 }
 
-a:visited {
+.caption a:visited {
     text-decoration: none;
-}
+}/**/

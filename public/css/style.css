@@ -81,7 +81,16 @@ footer ul {
 
 #navFix{
 	margin-bottom: 0px;
-	padding-top: 15px;
+	padding-top: 10px;
+}
+
+#navbar-main-collapse ul {
+  padding-left:0px;
+  margin-left: 0px;
+}
+
+.btn-default {
+  margin-right: 5px;
 }
 
 .mapContainer {
@@ -608,7 +617,8 @@ body {
 
     /* Navbar links: increase padding for taller navbar */
     .navbar .nav > li > a {
-      padding: 15px 20px;
+      padding: 0px 20px 0px 0px;
+	  margin-bottom: 5px;
     }
 
     /* Offset the responsive button for proper vertical alignment */
