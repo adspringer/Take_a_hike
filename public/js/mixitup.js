@@ -126,7 +126,7 @@ var checkboxFilter = {
     
 	  if(self.$container.mixItUp('isLoaded')){
     	self.$container.mixItUp('filter', self.outputString, function(state){
-               alert('MixItUp: '+ state.activeFilter);;
+             /*  alert('MixItUp: '+ state.activeFilter);;*/
         });
 	  }
   }
