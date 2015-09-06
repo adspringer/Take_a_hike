@@ -4,8 +4,11 @@ html {
 body{
 }
 
+.panel-thumbnail {
+  height:60%;
+}
 .panelStyle {
-  padding: 15px;
+  padding: 10px;
   background-color: RGBA(104, 184, 196, 1);
   color: white;
   font-size: 12px;
@@ -18,11 +21,23 @@ padding-top: 75px;
   float: left;
 }
 
+H1 {
+  margin-top:15px;
+}
 
-H4, H2 {
+H2 {
   margin-bottom: 15px;
 }
 
+H4 {
+  margin-bottom: 15px;
+  margin-top:10px;
+}
+
+H5 {
+  margin-bottom: 5px;
+  margin-top:0px;
+}
 .udPad{
   padding-top: 15px;
   padding-bottom: 5px;

@@ -2,16 +2,8 @@
 <script type="text/javascript">
         
             function init_map() {
-            /*	document.getElementById("map-canvas").style.height=  $('.intro').height() + "px";
-            	$('#sideBar').affix({
-      				offset: {
-        					top: $('.intro').height() + 60
-      				}
-      			});*/
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-					 //var myLatlng = new google.maps.LatLng(32.94530135,-117.2121048);
-			  /*var myLatlng = new google.maps.LatLng(32.93406422,-117.06396103);*/
 			  var myLatlng = new google.maps.LatLng(33.05,-116.98);
                var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
@@ -28,8 +20,6 @@
                 }
                 disableDefaultUI: true
                 
-			
-				
 				var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 				var mapCenter = map.getCenter();
 
