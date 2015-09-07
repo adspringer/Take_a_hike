@@ -1,45 +1,41 @@
 <% include header %>
-    <!-- PAGE-HEADER-->
-      <div class="page-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1>San Elijo Lagoon Trail</h1>
-					
-					<!-- BREADCRUMB -->
-					<ul class="breadcrumb">
-						<li><a href="/">Home</a> <span class="divider">&rarr;</span></li>
-						<li><a href="/#blah">Find A Trail</a><span class="divider">&rarr;</span></li>
-						<li class="active">San Elijo Lagoon Trail</li>
-					</ul>
-					<!--END: BREADCRUMB -->
-				</div>
-			</div>
-		</div>
-      </div>
 <!-- PAGE-HEADER-->
+<div class="page-header">
+    <div class="container">
+	  <div class="row">
+		  <div class="col-sm-12 skipNav">
+			<h1>San Elijo Lagoon Trail</h1>    <!-- TRAIL NAME -->
+		  </div>
+	  </div>
+	</div>
+</div>
 
+<!-- Example row of columns -->
 <div class="container">
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-	  
-<!-- CONTENT SIDE-->
+<div class="row">
 <div class="col-sm-8">
-<!-- INNER ROW-->
-<div class="row-fluid">
-<!-- Carousel
-================================================== -->
+<!-- Carousel -->
 <div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-   
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="item active">
+  <div class="carousel-inner"> 
+    <div class="item active">       <!-- TRAIL IMAGES -->
       <img src="/img/TrailImages/SanElijo/SanElijo1.jpg" style="width:100%" class="img-responsive">
     </div>
-    
+	<div class="item">              <!-- TRAIL IMAGES -->
+      <img src="/img/TrailImages/SanElijo/SanElijo2.jpg" style="width:100%" class="img-responsive">
+    </div>
+	<div class="item">              <!-- TRAIL IMAGES -->
+      <img src="/img/TrailImages/SanElijo/SanElijo3.jpg" style="width:100%" class="img-responsive">
+    </div>
+	<div class="item">              <!-- TRAIL IMAGES -->
+      <img src="/img/TrailImages/SanElijo/SanElijo4.jpg" style="width:100%" class="img-responsive">
+    </div>
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -49,49 +45,27 @@
     <span class="icon-next"></span>
   </a>  
 </div>
-<!-- /.carousel --> 
-		
-		<h2 class=""><a href="#"></a></h2>
-			<!--p class=" clearfix">
-				<i class="fa-icon-comment"></i>
-				<a href="#">3 Comments</a>
-				| <i class="fa-icon-share"></i>
-				<a href="#">39 Shares</a> | <i class="fa-icon-user"></i> 
-				<a href="#">Admin</a> | Tags: 
-				<a href="#"><span class="label label-info">Bootstraptor</span></a> 
-				<a href="#"><span class="label label-info">Bootstrap</span></a> 
-				<a href="#"><span class="label label-info">UI</span></a> 
-				<a href="#"><span class="label label-info">growth</span></a>
-			</p-->
+<!-- /Carousel -->
+		                            <!-- TRAIL PARAGRAPH -->
 		<p class="lead">The trails here are part of an ecological preserve which give you a great look at all the natural beauty there is by the lagoon.
 		
 		</p>
 		
-		<p class="">On the trails are allows leashed dogs. It is a great easy walk for families. It is advised to go on this trail in early summer or late spring since the trail is very exposed to the sun and can get very hot. It has well kept paths and a great visitor center for any questions and fun activities for children. There are a few benches that are ideal to take a break and watch the birds.
+		<p>On the trails are allows leashed dogs. It is a great easy walk for families. It is advised to go on this trail in early summer or late spring since the trail is very exposed to the sun and can get very hot. It has well kept paths and a great visitor center for any questions and fun activities for children. There are a few benches that are ideal to take a break and watch the birds.
 The lagoon is a great place to walk, run, bird watch, take your dog for a walk, and there are even equestrian trials. The lagoon trials are open all year long, free to access, and are open from9am-5pm. 
 		
 		
 		</p>
-		<p class="">
+		<p>
 		Address- San Elijo Lagoon Encinitas, CA 92024
 
 </p>
-		
-				
-<!--/ article-->
-
-
-<!--/ article-->
-<hr>
-
-</div>
-<!-- INNER ROW-FLUID-->
 
 </div>
 <!-- /CONTENT SIDE-->
    
-<!-- RIGHT SIDE-->   
-	<div class="col-sm-4" style="background-color:RGBA(102, 102, 102, 1)">
+                                    <!-- TRAIL RIGHT SIDE -->   
+<div class="col-sm-4" style="background-color:RGBA(102, 102, 102, 1)">
 		<h4>Specs</h4>
 	<hr>
 		<table class="table">
@@ -159,59 +133,45 @@ The lagoon is a great place to walk, run, bird watch, take your dog for a walk, 
    </br>
    </br> 
     </div>
-<!-- /RIGHT SIDE--> 
-
-</div>
-</div> <!-- /container -->
+                                       <!-- / TRAIL RIGHT SIDE--> 
+</div>  <!--/ row -->
+</div> <!--/ container -->
 <!--/ CONTENT -->
 
-<!-- FOOTER-->
-<footer>
-</div><!-- CONTAINER FOOTER-->
-<div class="container">
+<div class="container"> <!-- CONTAINER FOOTER-->
+<hr>
 	<h4>Similar Trails</h4>
 	<div class="row">
-	   <div class="col-sm-4 col-xs-6">
-      
-        <div class="panel panel-default">
+	   <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default">       <!-- TRAIL THUMBNAIL -->
           <div class="panel-thumbnail"><a href="/hike2"><img src="/img/TrailFilter/Cowles5.jpg" class="img-responsive"></a></div>
           <div class="panelStyle">
-            <p>Cowles Mountain Trail</p>
-            <p></p>
-
+            <h5>Cowles Mountain Trail</h5>   <!--  TRAIL NAME -->
           </div>
         </div><!--/panel-->
       </div><!--/col-->
       
-      <div class="col-sm-4 col-xs-6">
-      
-      	<div class="panel panel-default">
+      <div class="col-sm-4 col-xs-12">
+      	<div class="panel panel-default">       <!-- TRAIL THUMBNAIL -->
           <div class="panel-thumbnail"><a href="/hike3"><img src="/img/TrailFilter/Bayside1.jpg" class="img-responsive"></a></div>
           <div class="panelStyle">
-            <p>Bayside Trail</p>
-            <p></p>
-            
+            <h5>Bayside Trail</h5>   <!--  TRAIL NAME -->
           </div>
         </div><!--/panel--> 
       </div><!--/col-->
       
-      <div class="col-sm-4 col-xs-6">
-      
-      	<div class="panel panel-default">
+      <div class="col-sm-4 col-xs-12">
+      	<div class="panel panel-default">       <!-- TRAIL THUMBNAIL -->
           <div class="panel-thumbnail"><a href="/hike5" title="Interiors"><img src="/img/TrailFilter/Bayside1.jpg" class="img-responsive"></a></div>
           <div class="panelStyle">
-            <p>Guy Fleming Trail</p>
-            <p></p>
-            
+            <h5>Guy Fleming Trail</h5>   <!--  TRAIL NAME -->
           </div>
         </div><!--/panel--> 
-
       </div><!--/col-->
+	</div>
+</div>  <!-- /CONTAINER FOOTER-->
 
-<div class="container">
-</footer>
-
-<% include footer 
+<% include footer %>
 </body>
 </html>
 <% include script %>

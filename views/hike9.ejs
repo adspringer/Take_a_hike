@@ -1,45 +1,41 @@
 <% include header %>
-    <!-- PAGE-HEADER-->
-      <div class="page-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1>Palomar Observatory Trail</h1>
-					
-					<!-- BREADCRUMB -->
-					<ul class="breadcrumb">
-						<li><a href="/">Home</a> <span class="divider">&rarr;</span></li>
-						<li><a href="/#blah">Find A Trail</a><span class="divider">&rarr;</span></li>
-						<li class="active">Palomar Observatory Trail</li>
-					</ul>
-					<!--END: BREADCRUMB -->
-				</div>
-			</div>
-		</div>
-      </div>
 <!-- PAGE-HEADER-->
+<div class="page-header">
+    <div class="container">
+	  <div class="row">
+		  <div class="col-sm-12 skipNav">
+			<h1>Palomar Observatory Trail</h1>    <!-- TRAIL NAME -->
+		  </div>
+	  </div>
+	</div>
+</div>
 
+<!-- Example row of columns -->
 <div class="container">
-      <!-- Example row of columns -->
-      <div class="row-fluid">
-	  
-<!-- CONTENT SIDE-->
+<div class="row">
 <div class="col-sm-8">
-<!-- INNER ROW-->
-<div class="row-fluid">
-<!-- Carousel
-================================================== -->
+<!-- Carousel -->
 <div id="myCarousel" class="carousel slide">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="item active">
+  <div class="carousel-inner"> 
+    <div class="item active">       <!-- TRAIL IMAGES -->
       <img src="/img/TrailImages/PalomarObservatory/Palomar1.jpg" style="width:100%" class="img-responsive">
     </div>
-  
+	<div class="item">              <!-- TRAIL IMAGES -->
+      <img src="/img/TrailImages/PalomarObservatory/Palomar2.jpg" style="width:100%" class="img-responsive">
+    </div>
+	<div class="item">              <!-- TRAIL IMAGES -->
+      <img src="/img/TrailImages/PalomarObservatory/Palomar3.jpg" style="width:100%" class="img-responsive">
+    </div>
+	<div class="item">              <!-- TRAIL IMAGES -->
+      <img src="/img/TrailImages/PalomarObservatory/Palomar4.jpg" style="width:100%" class="img-responsive">
+    </div>
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -49,25 +45,13 @@
     <span class="icon-next"></span>
   </a>  
 </div>
-<!-- /.carousel -->
-		
-		<h2 class=""><a href="#"></a></h2>
-			<!--p class=" clearfix">
-				<i class="fa-icon-comment"></i>
-				<a href="#">3 Comments</a>
-				| <i class="fa-icon-share"></i>
-				<a href="#">39 Shares</a> | <i class="fa-icon-user"></i> 
-				<a href="#">Admin</a> | Tags: 
-				<a href="#"><span class="label label-info">Bootstraptor</span></a> 
-				<a href="#"><span class="label label-info">Bootstrap</span></a> 
-				<a href="#"><span class="label label-info">UI</span></a> 
-				<a href="#"><span class="label label-info">growth</span></a>
-			</p-->
+<!-- /Carousel -->
+		                            <!-- TRAIL PARAGRAPH -->
 		<p class="lead">This trail is known to have plenty of shade for
 		its moderately difficult trek. It has some great scenic views to
 		offer and recommended primarily for hikers. </p>
 		
-		<p class="">
+		<p>
 		    The Hale Telescope
 		is also located close to trial, about 1/3 of a mile from the top
 		and there is a museum and gift shop. The forest environment
@@ -75,24 +59,14 @@
 		up to the top. This trails is best from May to Novemeber and requires a $5 fee. </p>
 		    
 		    
-		    <p class="">
+		    <p>
 		    Address- Palomar Observatory Campground Palomar Mountain, CA 92060</p>
-
-		
-<!--/ article--> 
-
-
-<!--/ article-->
-<hr>
-
-</div>
-<!-- INNER ROW-FLUID-->
 
 </div>
 <!-- /CONTENT SIDE-->
    
-<!-- RIGHT SIDE-->   
-	<div class="col-sm-4" style="background-color:RGBA(102, 102, 102, 1)">
+                                    <!-- TRAIL RIGHT SIDE -->   
+<div class="col-sm-4" style="background-color:RGBA(102, 102, 102, 1)">
 		<h4>Specs</h4>
 	<hr>
 		<table class="table">
@@ -151,57 +125,43 @@
    </br>
    </br> 
     </div>
-<!-- /RIGHT SIDE--> 
-
-</div>
-</div> <!-- /container -->
+                                       <!-- / TRAIL RIGHT SIDE--> 
+</div>  <!--/ row -->
+</div> <!--/ container -->
 <!--/ CONTENT -->
 
-<!-- FOOTER-->
-<footer>
-</div><!-- CONTAINER FOOTER-->
-<div class="container">
+<div class="container"> <!-- CONTAINER FOOTER-->
+<hr>
 	<h4>Similar Trails</h4>
 	<div class="row">
-	   <div class="col-sm-4 col-xs-6">
-      
-        <div class="panel panel-default">
+	   <div class="col-sm-4 col-xs-12">
+        <div class="panel panel-default">       <!-- TRAIL THUMBNAIL -->
           <div class="panel-thumbnail"><a href="/hike1"><img src="/img/TrailFilter/MtWoodson1.jpg" class="img-responsive"></a></div>
           <div class="panelStyle">
-            <p>Mt. Woodson Trail</p>
-            <p></p>
-
+            <h5>Mt. Woodson Trail</h5>   <!--  TRAIL NAME -->
           </div>
         </div><!--/panel-->
       </div><!--/col-->
       
-      <div class="col-sm-4 col-xs-6">
-      
-      	<div class="panel panel-default">
+      <div class="col-sm-4 col-xs-12">
+      	<div class="panel panel-default">       <!-- TRAIL THUMBNAIL -->
           <div class="panel-thumbnail"><a href="/hike11"><img src="/img/TrailFilter/NorthShores1.jpg" class="img-responsive"></a></div>
           <div class="panelStyle">
-            <p>North Shore Lake Hodges Trail</p>
-            <p></p>
-            
+            <h5>North Shore Lake Hodges Trail</h5>   <!--  TRAIL NAME -->
           </div>
         </div><!--/panel--> 
       </div><!--/col-->
       
-      <div class="col-sm-4 col-xs-6">
-      
-      	<div class="panel panel-default">
+      <div class="col-sm-4 col-xs-12">
+      	<div class="panel panel-default">       <!-- TRAIL THUMBNAIL -->
           <div class="panel-thumbnail"><a href="/hike20" title="Interiors"><img src="/img/TrailFilter/ironmountain5.jpg" class="img-responsive"></a></div>
           <div class="panelStyle">
-            <p>Iron Mountain Summit Trail</p>
-            <p></p>
-            
+            <h5>Iron Mountain Summit Trail</h5>   <!--  TRAIL NAME -->
           </div>
         </div><!--/panel--> 
-
-      </div><!--/col--> 
-
-<div class="container">
-</footer>
+      </div><!--/col-->
+	</div>
+</div>  <!-- /CONTAINER FOOTER-->
 
 <% include footer %>
 </body>
